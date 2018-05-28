@@ -12,6 +12,11 @@ public class ParallelogramTest {
         assertEquals(6,parallelogram.calculateArea(),DELTA);
     }
 
+    @Test
+    public void returnFourteenAsPerimeterWhenBaseIsTwoHeightIsThreeAndLengthIsFive(){
+        Parallelogram parallelogram = new Parallelogram(2,3,5);
 
+        assertEquals(14,parallelogram.calculatePerimeter(),DELTA);
+    }
 
 }
