@@ -14,5 +14,12 @@ public class SquareTest {
         assertEquals(0, square.calculateArea(), DELTA);
     }
 
+    @Test
+    public void shouldReturnSixteenWhenSideIsFour() {
+        square = new Square(4);
+
+        assertEquals(16, square.calculateArea(), DELTA);
+    }
+
 
 }
