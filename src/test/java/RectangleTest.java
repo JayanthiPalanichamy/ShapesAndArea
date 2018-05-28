@@ -15,4 +15,10 @@ public class RectangleTest {
         Rectangle rectangle = new Rectangle(2,2);
         assertEquals(4,rectangle.calculateArea());
     }
+
+    @Test
+    public void shouldReturnTwentyWhenLengthIsFourAndBreadthIsFive() {
+        Rectangle rectangle = new Rectangle(4,5);
+        assertEquals(20,rectangle.calculateArea());
+    }
 }
