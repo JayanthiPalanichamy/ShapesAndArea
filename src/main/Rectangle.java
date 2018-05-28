@@ -8,6 +8,6 @@ public class Rectangle {
     }
 
     public int calculateArea() {
-        return 0;
+        return length * breadth;
     }
 }
