@@ -27,4 +27,10 @@ public class CircleTest {
         assertEquals(0,circle.calculatePerimeter(),DELTA);
     }
 
+    @Test
+    public void returnPerimeterWhenRadiusIsGiven(){
+        circle = new Circle(2);
+
+        assertEquals(12.56,circle.calculatePerimeter(),DELTA);
+    }
 }
