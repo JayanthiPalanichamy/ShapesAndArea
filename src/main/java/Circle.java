@@ -9,4 +9,8 @@ public class Circle {
     public double calculateRadius() {
         return PI * radius * radius;
     }
+
+    public double calculatePerimeter() {
+        return 2 * PI * radius;
+    }
 }
