@@ -11,7 +11,7 @@ public class Rectangle {
     }
 
     public static Rectangle createSquare(double side) {
-        return new Rectangle(side,side);
+        return new Rectangle(side, side);
     }
 
     public double calculateArea() {

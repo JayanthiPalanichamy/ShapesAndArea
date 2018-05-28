@@ -7,30 +7,30 @@ public class CircleTest {
     private Circle circle;
 
     @Test
-    public void returnZeroAsAreaWhenRadiusIsZero(){
+    public void returnZeroAsAreaWhenRadiusIsZero() {
         circle = new Circle(0);
 
-        assertEquals(0,circle.calculateRadius(),DELTA);
+        assertEquals(0, circle.calculateRadius(), DELTA);
     }
 
     @Test
-    public void returnAreaWhenRadiusIsGiven(){
+    public void returnAreaWhenRadiusIsGiven() {
         circle = new Circle(4);
 
-        assertEquals(50.24,circle.calculateRadius(),DELTA);
+        assertEquals(50.24, circle.calculateRadius(), DELTA);
     }
 
     @Test
-    public void returnZeroAsPerimeterWhenRadiusIsZero(){
+    public void returnZeroAsPerimeterWhenRadiusIsZero() {
         circle = new Circle(0);
 
-        assertEquals(0,circle.calculatePerimeter(),DELTA);
+        assertEquals(0, circle.calculatePerimeter(), DELTA);
     }
 
     @Test
-    public void returnPerimeterWhenRadiusIsGiven(){
+    public void returnPerimeterWhenRadiusIsGiven() {
         circle = new Circle(2);
 
-        assertEquals(12.56,circle.calculatePerimeter(),DELTA);
+        assertEquals(12.56, circle.calculatePerimeter(), DELTA);
     }
 }
