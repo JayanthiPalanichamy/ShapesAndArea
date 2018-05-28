@@ -1,3 +1,5 @@
+
+
 public class Rectangle {
     private double breadth;
     private double length;
@@ -15,6 +17,6 @@ public class Rectangle {
     }
 
     public double calculatePerimeter() {
-        return length + breadth;
+        return 2 * (length + breadth);
     }
 }
