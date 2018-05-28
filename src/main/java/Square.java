@@ -1,8 +1,8 @@
 public class Square {
-    Rectangle equalSideRectangle;
+    private final Rectangle equalSideRectangle;
 
     public Square(double side) {
-        equalSideRectangle = new Rectangle(side,side);
+        equalSideRectangle = new Rectangle(side, side);
     }
 
     public double calculateArea() {
@@ -10,6 +10,6 @@ public class Square {
     }
 
     public double calculatePerimeter() {
-        return 0;
+        return equalSideRectangle.calculatePerimeter();
     }
 }

@@ -1,8 +1,6 @@
-
-
 public class Rectangle {
-    private double breadth;
-    private double length;
+    private final double breadth;
+    private final double length;
 
     public Rectangle(double length, double breadth) {
         if (length < 0 || breadth < 0) {
@@ -10,6 +8,10 @@ public class Rectangle {
         }
         this.length = length;
         this.breadth = breadth;
+    }
+
+    public static Rectangle createSquare(double side) {
+        return new Rectangle(side,side);
     }
 
     public double calculateArea() {

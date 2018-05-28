@@ -30,7 +30,7 @@ public class SquareTest {
 
     @Test
     public void shouldReturnFourAsPerimeterWhenSideIsTwo() {
-       square = new Square(2);
+        square = new Square(2);
 
         assertEquals(8, square.calculatePerimeter(), DELTA);
     }

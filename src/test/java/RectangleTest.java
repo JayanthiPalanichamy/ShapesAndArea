@@ -42,4 +42,11 @@ public class RectangleTest {
 
         assertEquals(6, rectangle.calculatePerimeter(), DELTA);
     }
+
+    @Test
+    public void shouldReturnSixteenWhenSideIsFour() {
+        Rectangle square = Rectangle.createSquare(4);
+
+        assertEquals(16, square.calculateArea(), DELTA);
+    }
 }
