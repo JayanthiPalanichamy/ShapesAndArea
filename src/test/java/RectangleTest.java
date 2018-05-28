@@ -30,4 +30,10 @@ public class RectangleTest {
         rectangle = new Rectangle(0,0);
         assertEquals(0,rectangle.calculatePerimeter(),DELTA);
     }
+
+    @Test
+    public void shouldReturnThreeWhenLengthIsTwoAndBreadthIsOne() {
+        rectangle = new Rectangle(2,1);
+        assertEquals(3,rectangle.calculatePerimeter(),DELTA);
+    }
 }

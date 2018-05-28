@@ -3,7 +3,7 @@ public class Rectangle {
     private double length;
 
     public Rectangle(double length, double breadth) {
-        if(length < 0 || breadth < 0) {
+        if (length < 0 || breadth < 0) {
             throw new IllegalArgumentException();
         }
         this.length = length;
@@ -15,6 +15,6 @@ public class Rectangle {
     }
 
     public double calculatePerimeter() {
-        return 0.0;
+        return length + breadth;
     }
 }
