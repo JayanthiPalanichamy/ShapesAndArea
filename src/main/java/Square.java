@@ -8,4 +8,8 @@ public class Square {
     public double calculateArea() {
         return equalSideRectangle.calculateArea();
     }
+
+    public double calculatePerimeter() {
+        return 0;
+    }
 }

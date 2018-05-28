@@ -21,5 +21,11 @@ public class SquareTest {
         assertEquals(16, square.calculateArea(), DELTA);
     }
 
+    @Test
+    public void shouldReturnZeroAsPerimeterWhenLengthAndBreadthAreZero() {
+        square = new Square(0);
+
+        assertEquals(0, square.calculatePerimeter(), DELTA);
+    }
 
 }
