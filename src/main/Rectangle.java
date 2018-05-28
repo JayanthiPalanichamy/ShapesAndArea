@@ -1,13 +1,13 @@
 public class Rectangle {
-    private int breadth;
-    private int length;
+    private double breadth;
+    private double length;
 
-    public Rectangle(int length, int breadth) {
+    public Rectangle(double length, double breadth) {
         this.length = length;
         this.breadth = breadth;
     }
 
-    public int calculateArea() {
+    public double calculateArea() {
         return length * breadth;
     }
 }
