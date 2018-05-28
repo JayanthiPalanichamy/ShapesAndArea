@@ -22,10 +22,16 @@ public class SquareTest {
     }
 
     @Test
-    public void shouldReturnZeroAsPerimeterWhenLengthAndBreadthAreZero() {
+    public void shouldReturnZeroAsPerimeterWhenSideIsZero() {
         square = new Square(0);
 
         assertEquals(0, square.calculatePerimeter(), DELTA);
     }
 
+    @Test
+    public void shouldReturnFourAsPerimeterWhenSideIsTwo() {
+       square = new Square(2);
+
+        assertEquals(8, square.calculatePerimeter(), DELTA);
+    }
 }

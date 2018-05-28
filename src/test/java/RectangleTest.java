@@ -37,7 +37,7 @@ public class RectangleTest {
     }
 
     @Test
-    public void shouldReturnThreeAsPerimeterWhenLengthIsTwoAndBreadthIsOne() {
+    public void shouldReturnSixAsPerimeterWhenLengthIsTwoAndBreadthIsOne() {
         rectangle = new Rectangle(2, 1);
 
         assertEquals(6, rectangle.calculatePerimeter(), DELTA);
