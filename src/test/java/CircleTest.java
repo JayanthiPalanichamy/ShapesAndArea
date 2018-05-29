@@ -10,14 +10,14 @@ public class CircleTest {
     public void returnZeroAsAreaWhenRadiusIsZero() {
         circle = new Circle(0);
 
-        assertEquals(0, circle.calculateRadius(), DELTA);
+        assertEquals(0, circle.calculateArea(), DELTA);
     }
 
     @Test
     public void returnAreaWhenRadiusIsGiven() {
         circle = new Circle(4);
 
-        assertEquals(50.24, circle.calculateRadius(), DELTA);
+        assertEquals(50.24, circle.calculateArea(), DELTA);
     }
 
     @Test
