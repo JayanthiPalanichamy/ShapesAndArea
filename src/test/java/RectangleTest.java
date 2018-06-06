@@ -9,42 +9,29 @@ public class RectangleTest {
     private final double DELTA = 0.0001;
 
     @Test
-    public void shouldReturnZeroAsAreaWhenLengthAndBreadthAreZero() {
-        rectangle = new Rectangle(0, 0);
-
-        assertEquals(0, rectangle.calculateArea(), DELTA);
-    }
-
-    @Test
-    public void shouldReturnTwentyWhenLengthIsFourAndBreadthIsFive() {
+    public void shouldReturnAreaWhenLengthAndBreadthIsGiven() {
         rectangle = new Rectangle(4, 5);
 
         assertEquals(20, rectangle.calculateArea(), DELTA);
     }
 
     @Test
-    public void shouldReturnAreaForPointValues() {
+    public void shouldReturnAreaWhenLengthAndBreadthIsGivenInPointValues() {
         rectangle = new Rectangle(2.5, 4.1);
 
         assertEquals(10.25, rectangle.calculateArea(), DELTA);
     }
 
-    @Test
-    public void shouldReturnZeroAsPerimeterWhenLengthAndBreadthAreZero() {
-        rectangle = new Rectangle(0, 0);
-
-        assertEquals(0, rectangle.calculatePerimeter(), DELTA);
-    }
 
     @Test
-    public void shouldReturnSixAsPerimeterWhenLengthIsTwoAndBreadthIsOne() {
+    public void shouldReturnPerimeterWhenLengthAndBreadthIsGiven() {
         rectangle = new Rectangle(2, 1);
 
         assertEquals(6, rectangle.calculatePerimeter(), DELTA);
     }
 
     @Test
-    public void shouldReturnSixteenWhenSideIsFour() {
+    public void shouldReturnAreaWhenSquareSideIsGiven() {
         Rectangle square = Rectangle.createSquare(4);
 
         assertEquals(16, square.calculateArea(), DELTA);

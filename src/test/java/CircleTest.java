@@ -7,24 +7,10 @@ public class CircleTest {
     private Circle circle;
 
     @Test
-    public void returnZeroAsAreaWhenRadiusIsZero() {
-        circle = new Circle(0);
-
-        assertEquals(0, circle.calculateArea(), DELTA);
-    }
-
-    @Test
     public void returnAreaWhenRadiusIsGiven() {
         circle = new Circle(4);
 
         assertEquals(50.24, circle.calculateArea(), DELTA);
-    }
-
-    @Test
-    public void returnZeroAsPerimeterWhenRadiusIsZero() {
-        circle = new Circle(0);
-
-        assertEquals(0, circle.calculatePerimeter(), DELTA);
     }
 
     @Test

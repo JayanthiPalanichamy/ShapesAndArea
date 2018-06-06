@@ -1,4 +1,4 @@
-public class Parallelogram extends Shape {
+public class Parallelogram implements Shape {
     private final double height;
     private final double base;
     private final double length;

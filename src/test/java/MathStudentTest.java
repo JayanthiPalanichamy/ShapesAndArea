@@ -16,16 +16,8 @@ public class MathStudentTest {
     }
 
     @Test
-    public void returnTotalAsZeroForAllTheShapesWithZeroArea() {
-        shapeList = Arrays.asList(new Rectangle(0, 0), new Square(0), new Circle(0), new Parallelogram(0, 0, 0));
-
-
-        assertEquals(0, mathStudent.calculateTotalArea(shapeList), 0.0001);
-    }
-
-    @Test
-    public void returnTotalAsAreaForAllTheShapes() {
-        shapeList = Arrays.asList(new Rectangle(1, 1), new Square(1), new Circle(1), new Parallelogram(1, 1, 1));
+    public void returnTotalAreaForAllTheShapes() {
+        shapeList = Arrays.asList(new Rectangle(1, 1), Rectangle.createSquare(1), new Circle(1), new Parallelogram(1, 1, 1));
 
         assertEquals(6.14, mathStudent.calculateTotalArea(shapeList), 0.0001);
     }

@@ -1,5 +1,7 @@
-abstract public class Shape {
-    abstract public double calculateArea();
 
-    abstract public double calculatePerimeter();
+
+public interface Shape {
+     double calculateArea();
+
+     double calculatePerimeter();
 }
