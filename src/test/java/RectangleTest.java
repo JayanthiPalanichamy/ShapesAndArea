@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 public class RectangleTest {
     Rectangle rectangle;
 
-    private final double DELTA = 0.0001;
+    private static final double DELTA = 0.0001;
 
     @Test
     public void shouldReturnAreaWhenLengthAndBreadthIsGiven() {
